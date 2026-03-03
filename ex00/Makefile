@@ -17,12 +17,12 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@printf "$(YELLOW)Linking $(NAME)...$(RESET)"
-	@$(CPP) $(FLAGS) $(OBJS) -o $(NAME)
+	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
 
 $(OBJS_DIR)%.o:%.cpp
 	@mkdir -p $(dir $@)
 	@printf "$(BLUE)Compiling $<... $(RESET)"
-	@$(CPP) $(FLAGS) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 	@printf "\b$(GREEN)OK!$(RESET)\n"
 
 clean:
