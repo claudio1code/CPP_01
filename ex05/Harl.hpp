@@ -6,7 +6,7 @@
 /*   By: clados-s <clados-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 16:08:23 by clados-s          #+#    #+#             */
-/*   Updated: 2026/03/04 16:09:17 by clados-s         ###   ########.fr       */
+/*   Updated: 2026/03/04 16:22:33 by clados-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ class Harl{
         void    warning( void );
         void    error( void );
     public:
-        Harl();
-        void    (Harl::*actions[4])();
         void    complain( std::string level ); 
 };
 

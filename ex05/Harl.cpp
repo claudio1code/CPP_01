@@ -6,18 +6,11 @@
 /*   By: clados-s <clados-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 16:08:02 by clados-s          #+#    #+#             */
-/*   Updated: 2026/03/04 16:08:14 by clados-s         ###   ########.fr       */
+/*   Updated: 2026/03/04 16:23:33 by clados-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
-
-Harl::Harl(){
-    actions[0] = &Harl::debug;
-    actions[1] = &Harl::info;
-    actions[2] = &Harl::warning;
-    actions[3] = &Harl::error;
-}
 
 void    Harl::debug(){
     std::cout << "Eu amo ter bacon extra para o meu hambúrguer" 
